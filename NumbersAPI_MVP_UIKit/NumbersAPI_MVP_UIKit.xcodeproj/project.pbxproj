@@ -12,6 +12,8 @@
 		8242A1EF2C455BDC00F50D32 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1EE2C455BDC00F50D32 /* NumberViewController.swift */; };
 		8242A1F42C455BDD00F50D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1F32C455BDD00F50D32 /* Assets.xcassets */; };
 		8242A1F72C455BDD00F50D32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1F62C455BDD00F50D32 /* Base */; };
+		82AA76002C455E27000BEBFB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA75FF2C455E27000BEBFB /* Answer.swift */; };
+		82AA76022C455E31000BEBFB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA76012C455E31000BEBFB /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8242A1F32C455BDD00F50D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8242A1F62C455BDD00F50D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8242A1F82C455BDD00F50D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82AA75FF2C455E27000BEBFB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		82AA76012C455E31000BEBFB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				8242A1FE2C455C4500F50D32 /* App */,
-				8242A1EE2C455BDC00F50D32 /* NumberViewController.swift */,
+				82AA75FC2C455DF7000BEBFB /* Model */,
+				82AA75FD2C455DFC000BEBFB /* View */,
+				82AA75FE2C455E19000BEBFB /* Presenter */,
 			);
 			path = NumbersAPI_MVP_UIKit;
 			sourceTree = "<group>";
@@ -70,6 +76,30 @@
 				8242A1F82C455BDD00F50D32 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		82AA75FC2C455DF7000BEBFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				82AA75FF2C455E27000BEBFB /* Answer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82AA75FD2C455DFC000BEBFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8242A1EE2C455BDC00F50D32 /* NumberViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82AA75FE2C455E19000BEBFB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				82AA76012C455E31000BEBFB /* Presenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +175,8 @@
 				8242A1EF2C455BDC00F50D32 /* NumberViewController.swift in Sources */,
 				8242A1EB2C455BDC00F50D32 /* AppDelegate.swift in Sources */,
 				8242A1ED2C455BDC00F50D32 /* SceneDelegate.swift in Sources */,
+				82AA76002C455E27000BEBFB /* Answer.swift in Sources */,
+				82AA76022C455E31000BEBFB /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
