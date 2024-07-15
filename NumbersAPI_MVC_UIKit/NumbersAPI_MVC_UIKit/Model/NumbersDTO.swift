@@ -13,11 +13,11 @@ struct NumbersDTO: Codable {
     let found: Bool
     let type: String
     
+    /// Answer Entity로 변환합니다.
     var toAnswer: Answer {
         return Answer(
             number: self.number,
-            text: self.text,
-            isFound: self.found
+            text: self.text
         )
     }
 }

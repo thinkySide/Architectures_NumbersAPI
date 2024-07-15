@@ -7,8 +7,11 @@
 
 import Foundation
 
+// MARK: - Service
+
 struct NumbersAPIService {
     
+    /// 네트워크 에러 열거형
     enum NetworkError: Error {
         case noURL
         case urlSessionFailed

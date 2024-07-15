@@ -28,10 +28,11 @@ final class NumberViewController: UIViewController {
 
 extension NumberViewController {
     
+    /// Target Event를 설정합니다.
     private func setupEvent() {
         numberView.button.addTarget(
             self,
-            action: #selector(buttonTapped),
+            action: #selector(randomButtonTapped),
             for: .touchUpInside
         )
     }
@@ -41,11 +42,16 @@ extension NumberViewController {
 
 extension NumberViewController {
     
-    @objc private func buttonTapped() {
+    /// 랜덤 버튼을 탭합니다.
+    @objc private func randomButtonTapped() {
         Task {
             let result = await numbersAPIService.fetchAnswer()
             switch result {
-            case .success(let answer): numberView.content.text = answer.text
+                
+            case .success(let answer):
+                numberView.targetNumber.text = String(answer.number)
+                numberView.content.text = answer.text
+                
             case .failure(let failure): print(failure)
             }
         }
