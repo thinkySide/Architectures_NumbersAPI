@@ -8,10 +8,15 @@
 import UIKit
 
 final class NumberViewController: UIViewController {
+    
+    private let numberView = NumberView()
+    
+    override func loadView() {
+        view = numberView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 }
-
