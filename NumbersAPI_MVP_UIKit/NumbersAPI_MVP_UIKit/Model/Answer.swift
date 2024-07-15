@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Answer {
+    let number: Int
+    let text: String
+}
