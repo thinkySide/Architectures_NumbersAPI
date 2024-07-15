@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		8242A1BF2C4542DA00F50D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1BE2C4542DA00F50D32 /* AppDelegate.swift */; };
 		8242A1C12C4542DA00F50D32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1C02C4542DA00F50D32 /* SceneDelegate.swift */; };
-		8242A1C32C4542DA00F50D32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1C22C4542DA00F50D32 /* HomeViewController.swift */; };
+		8242A1C32C4542DA00F50D32 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1C22C4542DA00F50D32 /* NumberViewController.swift */; };
 		8242A1C82C4542DC00F50D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1C72C4542DC00F50D32 /* Assets.xcassets */; };
 		8242A1CB2C4542DC00F50D32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1CA2C4542DC00F50D32 /* Base */; };
+		8242A1D72C4543E200F50D32 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1D62C4543E200F50D32 /* NumberView.swift */; };
+		8242A1D92C45440100F50D32 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1D82C45440100F50D32 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8242A1BB2C4542DA00F50D32 /* NumbersAPI_MVC_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumbersAPI_MVC_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8242A1BE2C4542DA00F50D32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8242A1C02C4542DA00F50D32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8242A1C22C4542DA00F50D32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8242A1C22C4542DA00F50D32 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		8242A1C72C4542DC00F50D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8242A1CA2C4542DC00F50D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8242A1CC2C4542DC00F50D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8242A1D62C4543E200F50D32 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		8242A1D82C45440100F50D32 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		8242A1BD2C4542DA00F50D32 /* NumbersAPI_MVC_UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8242A1BE2C4542DA00F50D32 /* AppDelegate.swift */,
-				8242A1C02C4542DA00F50D32 /* SceneDelegate.swift */,
-				8242A1C22C4542DA00F50D32 /* HomeViewController.swift */,
-				8242A1C72C4542DC00F50D32 /* Assets.xcassets */,
-				8242A1C92C4542DC00F50D32 /* LaunchScreen.storyboard */,
-				8242A1CC2C4542DC00F50D32 /* Info.plist */,
+				8242A1D52C45439F00F50D32 /* App */,
+				8242A1D22C45438700F50D32 /* Model */,
+				8242A1D32C45438D00F50D32 /* View */,
+				8242A1D42C45439100F50D32 /* Controller */,
 			);
 			path = NumbersAPI_MVC_UIKit;
+			sourceTree = "<group>";
+		};
+		8242A1D22C45438700F50D32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8242A1D82C45440100F50D32 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8242A1D32C45438D00F50D32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8242A1D62C4543E200F50D32 /* NumberView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8242A1D42C45439100F50D32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8242A1C22C4542DA00F50D32 /* NumberViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8242A1D52C45439F00F50D32 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8242A1CC2C4542DC00F50D32 /* Info.plist */,
+				8242A1C72C4542DC00F50D32 /* Assets.xcassets */,
+				8242A1C92C4542DC00F50D32 /* LaunchScreen.storyboard */,
+				8242A1BE2C4542DA00F50D32 /* AppDelegate.swift */,
+				8242A1C02C4542DA00F50D32 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8242A1C32C4542DA00F50D32 /* HomeViewController.swift in Sources */,
+				8242A1C32C4542DA00F50D32 /* NumberViewController.swift in Sources */,
 				8242A1BF2C4542DA00F50D32 /* AppDelegate.swift in Sources */,
+				8242A1D92C45440100F50D32 /* Model.swift in Sources */,
 				8242A1C12C4542DA00F50D32 /* SceneDelegate.swift in Sources */,
+				8242A1D72C4543E200F50D32 /* NumberView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +322,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9XG4S4XZWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NumbersAPI_MVC_UIKit/Info.plist;
+				INFOPLIST_FILE = NumbersAPI_MVC_UIKit/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -308,7 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9XG4S4XZWN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NumbersAPI_MVC_UIKit/Info.plist;
+				INFOPLIST_FILE = NumbersAPI_MVC_UIKit/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
