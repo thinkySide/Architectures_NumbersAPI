@@ -13,7 +13,9 @@
 		8242A1C82C4542DC00F50D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1C72C4542DC00F50D32 /* Assets.xcassets */; };
 		8242A1CB2C4542DC00F50D32 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8242A1CA2C4542DC00F50D32 /* Base */; };
 		8242A1D72C4543E200F50D32 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1D62C4543E200F50D32 /* NumberView.swift */; };
-		8242A1D92C45440100F50D32 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1D82C45440100F50D32 /* Model.swift */; };
+		8242A1D92C45440100F50D32 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1D82C45440100F50D32 /* Answer.swift */; };
+		8242A1DB2C45493800F50D32 /* NumbersAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1DA2C45493800F50D32 /* NumbersAPIService.swift */; };
+		8242A1DD2C454F5600F50D32 /* NumbersDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8242A1DC2C454F5600F50D32 /* NumbersDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +27,9 @@
 		8242A1CA2C4542DC00F50D32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8242A1CC2C4542DC00F50D32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8242A1D62C4543E200F50D32 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
-		8242A1D82C45440100F50D32 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8242A1D82C45440100F50D32 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		8242A1DA2C45493800F50D32 /* NumbersAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersAPIService.swift; sourceTree = "<group>"; };
+		8242A1DC2C454F5600F50D32 /* NumbersDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,9 @@
 		8242A1D22C45438700F50D32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8242A1D82C45440100F50D32 /* Model.swift */,
+				8242A1D82C45440100F50D32 /* Answer.swift */,
+				8242A1DA2C45493800F50D32 /* NumbersAPIService.swift */,
+				8242A1DC2C454F5600F50D32 /* NumbersDTO.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,9 +180,11 @@
 			files = (
 				8242A1C32C4542DA00F50D32 /* NumberViewController.swift in Sources */,
 				8242A1BF2C4542DA00F50D32 /* AppDelegate.swift in Sources */,
-				8242A1D92C45440100F50D32 /* Model.swift in Sources */,
+				8242A1D92C45440100F50D32 /* Answer.swift in Sources */,
+				8242A1DB2C45493800F50D32 /* NumbersAPIService.swift in Sources */,
 				8242A1C12C4542DA00F50D32 /* SceneDelegate.swift in Sources */,
 				8242A1D72C4543E200F50D32 /* NumberView.swift in Sources */,
+				8242A1DD2C454F5600F50D32 /* NumbersDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

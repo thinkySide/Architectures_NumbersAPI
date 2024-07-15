@@ -26,6 +26,16 @@ final class NumberView: UIView {
         return button
     }()
     
+    let content: UILabel = {
+        let label = UILabel()
+        label.text = "어떤 결과가 나올까요?"
+        label.textColor = .red
+        label.font = .systemFont(ofSize: 14, weight: .semibold)
+        label.textAlignment = .center
+        label.numberOfLines = 0
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -46,7 +56,7 @@ extension NumberView {
     }
     
     private func setupAutoLayout() {
-        [title, button]
+        [title, button, content]
             .forEach {
                 addSubview($0)
                 $0.translatesAutoresizingMaskIntoConstraints = false
@@ -54,10 +64,15 @@ extension NumberView {
         
         NSLayoutConstraint.activate([
             title.centerXAnchor.constraint(equalTo: centerXAnchor),
-            title.centerYAnchor.constraint(equalTo: centerYAnchor),
+            title.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -32),
             
             button.centerXAnchor.constraint(equalTo: centerXAnchor),
-            button.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 8)
+            button.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 8),
+            
+            content.centerXAnchor.constraint(equalTo: centerXAnchor),
+            content.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 24),
+            content.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 56),
+            content.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -56),
         ])
     }
 }
