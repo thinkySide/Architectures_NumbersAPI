@@ -9,8 +9,8 @@ import Foundation
 
 final class NumberPresenter {
     
-    private weak var numberView: NumberViewInterface?
-    private let numberService = NumbersService()
+    private weak var numberView: NumberViewInterface? // View Interface(어떤 무언가)
+    private let numberService = NumbersService() // Model
     
     /// 외부의 View를 주입 받기 위한 메서드
     func setupView(_ numberView: NumberViewInterface) {
